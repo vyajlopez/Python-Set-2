@@ -191,7 +191,7 @@ def scytale_cipher(message, shift):
     return ''.join(encrypted)
 
 
-    def scytale_decipher(message, shift):
+def scytale_decipher(message, shift):
     '''Scytale De-cipher.
 
     Decrypts a message that was originally encrypted with the `scytale_cipher` function above.
