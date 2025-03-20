@@ -34,7 +34,7 @@ def shift_letter(letter, shift):
     return chr(new_letter)
 
 
-    def caesar_cipher(message, shift):
+def caesar_cipher(message, shift):
     '''Caesar Cipher.
 
     Apply a shift number to a string of uppercase English letters and spaces.
