@@ -115,7 +115,7 @@ def vigenere_cipher(message, key):
     str
         the message, shifted appropriately.
     '''
-extended_key = (key * (len(message) // len(key) + 1))[:len(message)]
+    extended_key = (key * (len(message) // len(key) + 1))[:len(message)]
     encrypted = []
     for i in range(len(message)):
         msg_char = message[i]
