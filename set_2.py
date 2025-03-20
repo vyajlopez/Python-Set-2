@@ -27,8 +27,6 @@ def shift_letter(letter, shift):
         the letter, shifted appropriately, if a letter.
         a single space if the original letter was a space.
     '''
-    # Replace `pass` with your code.
-    # Stay within the function. Only use the parameters as input. The function should return your answer.
     if letter == " ":
         return " "
     
@@ -117,8 +115,6 @@ def vigenere_cipher(message, key):
     str
         the message, shifted appropriately.
     '''
-    # Replace pass with your code.
-    # Stay within the function. Only use the parameters as input. The function should return your answer.
 extended_key = (key * (len(message) // len(key) + 1))[:len(message)]
     encrypted = []
     for i in range(len(message)):
@@ -183,8 +179,6 @@ def scytale_cipher(message, shift):
     str
         the encoded message
     '''
-    # Replace `pass` with your code.
-    # Stay within the function. Only use the parameters as input. The function should return your answer.
     pad_length = (-len(message)) % shift
     padded_message = message + '_' * pad_length
     cols = len(padded_message) // shift
@@ -221,8 +215,6 @@ def scytale_cipher(message, shift):
     str
         the decoded message
     '''
-    # Replace `pass` with your code.
-    # Stay within the function. Only use the parameters as input. The function should return your answer.
     cols = len(message) // shift
     decrypted = []
     for k in range(len(message)):
